@@ -43,8 +43,7 @@ def depositBankUser(driver , amount  ):
     clickElement(depositButton)
     typeAmount = findElement(typeAmountSelector, driver)
     typeAmount.send_keys(amount)
-    amount = (float)(typeAmount.get_attribute("value"))
-    currentBalance = getBalance( driver)
+    currentBalance = getBalance(driver)
     deposit = findElement(depositAmount, driver)
     clickElement(deposit)
     return currentBalance

@@ -1,6 +1,5 @@
 import pytest
 from deposit750Total import *
-from deposit250 import *
 from selenium import webdriver
 
 class TestUserBank:

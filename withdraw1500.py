@@ -48,3 +48,4 @@ def withdrawBankUser(driver , amount):
     typeAmount.send_keys(amount)
     withdrawAmount = findElement(withdrawAmountButton, driver)
     clickElement(withdrawAmount)
+

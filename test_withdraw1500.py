@@ -28,8 +28,9 @@ class TestUserBank:
         dateTimeBtn = findElement(dateTimeButtonSelector, driver)
         clickElement(dateTimeBtn)
         amountValue = findElement(amountSelectorValue, driver)
-        type = findElement(transactionTypeSelector, driver)
-        assert amountValue.text == amountWithdraw and type.text == transactionType
+        currenyType = findElement(transactionTypeSelector, driver)
+        time.sleep(2)
+        assert amountValue.text == amountWithdraw and currenyType.text == transactionType
 
 
 
